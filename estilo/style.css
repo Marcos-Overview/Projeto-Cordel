@@ -59,6 +59,10 @@ section { /*configuração genericas*/
     font-size: 3.5vw;/*Tamanha baseado na largura da tela, não é o melhor dos caminhos mas para agora é o suficiente*/
 }
 
+section > p {
+    padding-bottom: 1em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -67,14 +71,29 @@ section.normal{
 section.imagem {
     background-color: rgb(65, 58, 58);
     color: white;
+    background-size: cover; /*cobrir o quadro*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.415); /*inset = sombra pra dentr, 13px de espalhamento*/
+    background-attachment: fixed; /*Efeito Parallax - deixar a imagem travada mesmo quando for rolar a tela*/
 }
 
 section.imagem > p {
     /*border: 2px solid black;
     max-width: 400px;*/
-    background-color: rgba(0, 0, 0, 0.252);
+    background-color: rgba(0, 0, 0, 0.463);
     display: inline-block; /*caixar que se adapata ao tamanha do conteudo*/
     padding: 10px;
+    text-shadow: 1px 1px 0px black; /*tamanha, deslocamento ltarel/vertical, espaçamento e cor */
+    
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg); /*use o ../ para ele abrir a pasta*/
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);/*use o ../ para ele abrir a pasta*/
 }
 
 footer {
