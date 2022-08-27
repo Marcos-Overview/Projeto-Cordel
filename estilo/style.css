@@ -1,0 +1,67 @@
+@charset "UFT-8";
+
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh; /*view port hight*/
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; Deixar todas as letras MAIUSCULA*/
+    font-variant: small-caps; /*Todas as letras são maisculas porem a primeira letra de cada palavra que estiver no bloco fica maior*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section { /*configuração genericas*/
+    padding-top: 10vh; /*10% da altura da tela*/
+    padding-bottom: 10vh;/*10% da altura da tela*/
+    line-height: 2em; /*Espaçamento entre as palavras*/
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(65, 58, 58);
+    color: white;
+}
+
+section.imagem > p {
+    /*border: 2px solid black;*/
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.252);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
